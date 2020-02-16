@@ -9,8 +9,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
 @Entity
 @Table(name = "aluno")
+@Data
 public class Aluno implements Serializable {
 	
 
@@ -25,24 +28,6 @@ public class Aluno implements Serializable {
 	
 
 	public Aluno() {
-	}
-	
-	
-	public Long getId() {
-		return id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public LocalDate getIdade() {
-		return idade;
-	}
-	public void setIdade(LocalDate idade) {
-		this.idade = idade;
 	}
 	
 	
